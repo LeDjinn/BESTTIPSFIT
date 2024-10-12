@@ -10,15 +10,11 @@ async function sharedMetaData(params) {
     // enable this for resolving opengraph image
     // metadataBase: new URL(settings.url),
     title: {
-      default:
-        settings?.title ||
-        "Stablo - Blog Template for Next.js & Sanity CMS",
+      default: "BEST FIT TIPS - Meilleurs conseils pour le fitness",
       template: "%s | Stablo"
     },
-    description:
-      settings?.description ||
-      "Stablo - popular open-source next.js and sanity blog template",
-    keywords: ["Next.js", "Sanity", "Tailwind CSS"],
+    description: "BEST FIT TIPS - Meilleurs conseils pour le fitness",
+    keywords: ["Fitness", "Muscultation", "Nutrition", "Santé"],
     authors: [{ name: "Surjith" }],
     canonical: settings?.url,
     openGraph: {
@@ -33,7 +29,7 @@ async function sharedMetaData(params) {
       ]
     },
     twitter: {
-      title: settings?.title || "Stablo Template",
+      title:  "BEST FIT TIPS",
       card: "summary_large_image"
     },
     robots: {
@@ -60,4 +56,4 @@ export default async function Layout({ children, params }) {
   );
 }
 // enable revalidate for all pages in this layout
-// export const revalidate = 60;
+export const revalidate = 60;

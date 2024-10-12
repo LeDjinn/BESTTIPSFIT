@@ -21,7 +21,7 @@ console.log(projectId);
 
 export default defineConfig({
   name: "default",
-  title: "Stablo Template",
+  title: "BEST FIT TIPS",
   basePath: "/studio",
   projectId: projectId,
   dataset: dataset,
