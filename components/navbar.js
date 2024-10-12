@@ -9,7 +9,7 @@ import { urlForImage } from "@/lib/sanity/image";
 import cx from "clsx";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import { myLoader } from "@/utils/all";
-import imageLogo from '@/public/img/logoImage/Sans titre 900x200.png'
+import imageLogo from '@/public/img/logoImage/Untitled 900x200 (1).png'
 
 export default function Navbar(props) {
   const leftmenu = [

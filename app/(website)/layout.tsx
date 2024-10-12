@@ -10,10 +10,10 @@ async function sharedMetaData(params) {
     // enable this for resolving opengraph image
     // metadataBase: new URL(settings.url),
     title: {
-      default: "BEST TIPS FIT - Meilleurs conseils pour le fitness",
+      default: "BEST FIT TIPS - Meilleurs conseils pour le fitness",
       template: "%s | Stablo"
     },
-    description: "BEST TIPS FIT - Meilleurs conseils pour le fitness",
+    description: "BEST FIT TIPS - Meilleurs conseils pour le fitness",
     keywords: ["Fitness", "Muscultation", "Nutrition", "Santé"],
     authors: [{ name: "Surjith" }],
     canonical: settings?.url,
@@ -29,7 +29,7 @@ async function sharedMetaData(params) {
       ]
     },
     twitter: {
-      title:  "BEST TIPS FIT",
+      title:  "BEST FIT TIPS",
       card: "summary_large_image"
     },
     robots: {
