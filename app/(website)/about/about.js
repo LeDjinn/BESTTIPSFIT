@@ -58,7 +58,7 @@ export default function About({ authors, settings }) {
           fitness et de bien-être de manière efficace.
         </p>
         <p>
-          <Link onClick={()=>sendGTMEvent({event:'buttonClicked', value:'xyz'})}href="/contact">Get in touch</Link>
+          <Link onClick={() => sendGAEvent('event', 'buttonClicked', { value: 'xyz' })}href="/contact">Get in touch</Link>
         </p>
       </div>
     </Container>
