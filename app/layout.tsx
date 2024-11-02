@@ -2,6 +2,7 @@ import "@/styles/tailwind.css";
 import { Providers } from "./providers";
 import { cx } from "@/utils/all";
 import { Inter, Lora } from "next/font/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -23,7 +24,18 @@ export default function RootLayout({
       lang="en"
       suppressHydrationWarning
       className={cx(inter.variable, lora.variable)}>
-      <body className="antialiased text-gray-800 dark:bg-black dark:text-gray-400">
+      <GoogleTagManager gtmId="GTM-KBH8M85L" />
+      <body className="text-gray-800 antialiased dark:bg-black dark:text-gray-400">
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-KBH8M85L"
+            height="0"
+            width="0"
+            style={{
+              display: "none",
+              visibility: "hidden"
+            }}></iframe>
+        </noscript>
         <Providers>{children}</Providers>
       </body>
     </html>

@@ -1,5 +1,7 @@
+'use client';
 import Container from "@/components/container";
 import { urlForImage } from "@/lib/sanity/image";
+import { sendGTMEvent } from "@next/third-parties/google";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -41,14 +43,14 @@ export default function About({ authors, settings }) {
       <div className="prose mx-auto mt-14 text-center dark:prose-invert">
         <p>
           Depuis plusieurs années, nous sommes des passionnés de
-          fitness et de bien-être, toujours à l'affût des nouvelles
-          techniques de musculation, de minceur et d'amélioration de
+          fitness et de bien-être, toujours à l&lsquo;affût des nouvelles
+          techniques de musculation, de minceur et d&lsquo;amélioration de
           la santé. Nous passons un temps considérable à explorer les
           études et les conseils disponibles en ligne, cherchant à
           affiner nos connaissances et à perfectionner nos routines.
         </p>
         <p>
-          C'est pourquoi nous avons décidé de créer un blog qui
+          C&lsquo;est pourquoi nous avons décidé de créer un blog qui
           regroupe les meilleurs articles, conseils et études que nous
           découvrons. Notre objectif est de rendre ces informations
           accessibles dans des formats simples et concis, afin que
@@ -56,7 +58,7 @@ export default function About({ authors, settings }) {
           fitness et de bien-être de manière efficace.
         </p>
         <p>
-          <Link href="/contact">Get in touch</Link>
+          <Link onClick={()=>sendGTMEvent({event:'buttonClicked', value:'xyz'})}href="/contact">Get in touch</Link>
         </p>
       </div>
     </Container>
