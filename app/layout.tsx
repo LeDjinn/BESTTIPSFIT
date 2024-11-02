@@ -25,7 +25,7 @@ export default function RootLayout({
       suppressHydrationWarning
       className={cx(inter.variable, lora.variable)}>
       <GoogleTagManager gtmId="GTM-KBH8M85L" />
-      <body className="text-gray-800 antialiased dark:bg-black dark:text-gray-400">
+      <body className="text-gray-800 antialiased dark:bg-black te dark:text-gray-400">
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-KBH8M85L"
