@@ -1,12 +1,12 @@
-'use client'
+'use client';
  
-import { sendGAEvent } from '@next/third-parties/google'
+import { sendGTMEvent } from '@next/third-parties/google'
  
 export function EventButton() {
   return (
     <div>
-      <button
-        onClick={() => sendGAEvent('event', 'buttonClicked', { value: 'xyz' })}
+    <button
+        onClick={() => sendGTMEvent({ event: 'buttonClicked', value: 'xyz' })}
       >
         Send Event
       </button>
